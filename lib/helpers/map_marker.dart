@@ -3,7 +3,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:meta/meta.dart';
 
 /// [Fluster] can only handle markers that conform to the [Clusterable] abstract class.
-/// 
+///
 /// You can customize this class by adding more parameters that might be needed for
 /// your use case. For instance, you can pass an onTap callback or add an
 /// [InfoWindow] to your marker here, then you can use the [toMarker] method to convert
@@ -33,6 +33,7 @@ class MapMarker extends Clusterable {
 
   Marker toMarker() => Marker(
         markerId: MarkerId(id),
+        infoWindow: InfoWindow(title: pointsSize?.toString() ?? "1"),
         position: LatLng(
           position.latitude,
           position.longitude,

@@ -71,6 +71,7 @@ class _HomePageState extends State<HomePage> {
 
   /// Inits [Fluster] and all the markers with network images and updates the loading state.
   void _initMarkers() async {
+    
     final List<MapMarker> markers = [];
 
     for (LatLng markerLocation in _markerLocations) {
@@ -122,7 +123,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Markers and Clusters Example'),
+        title: Text('Account List'),
       ),
       body: Stack(
         children: <Widget>[
