@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
     LatLng(41.139813, -8.609381),
   ];
 
-  /// Called when the Google Map widget is created. Updates the map loading state
+  // Called when the Google Map widget is created. Updates the map loading state
   /// and inits the markers.
   void _onMapCreated(GoogleMapController controller) {
     _mapController.complete(controller);
